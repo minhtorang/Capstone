@@ -8,12 +8,6 @@ from sklearn.model_selection import train_test_split
 from pmdarima import auto_arima
 from datetime import time, datetime
 
-# X = df.iloc[:, :-1]
-# y = df['Giá']
-# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=False)
-# model = auto_arima(y_train, start_p=1, start_q=1)
-
-
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
 if uploaded_file:
