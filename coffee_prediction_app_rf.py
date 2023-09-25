@@ -68,9 +68,9 @@ def main():
         # Display the predicted values with the next day's date
         st.subheader('Predicted Values for the Next Day')
         st.write(f'Date for the Next Day: {next_day_date.strftime("%Y-%m-%d")}')
-        st.write(f'Predicted Giá Diesel 1 lít for the next day: {predicted_diesel_price[0]:.2f}')
-        st.write(f'Predicted Precipitation (mm) for the next day: {predicted_precipitation[0]:.2f}')
-        st.write(f'Predicted Giá Cà Phê for the next day: {predicted_coffee_price[0]:.2f} VND')
+        # st.write(f'Predicted Giá Diesel 1 lít for the next day: {predicted_diesel_price[0]:.2f}')
+        # st.write(f'Predicted Precipitation (mm) for the next day: {predicted_precipitation[0]:.2f}')
+        st.write(f'Predicted Giá Cà Phê for the day 30th: {predicted_coffee_price[0]:.2f} VND')
 
         # Create a time series plot for predicted coffee prices with improved date formatting
         st.subheader('Predicted Coffee Price Over Time')
